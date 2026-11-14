@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1024px;
+    height: 1024px;
+    background-color: #fbf9f4;
+    color: #1a1a1a;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .border-wrap {
+    border: 3px double #111;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* Header */
+  .masthead {
+    text-align: center;
+    border-bottom: 2px solid #111;
+    padding-bottom: 8px;
+  }
+  .title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  .meta-bar {
+    border-top: 1px solid #111;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Lead Stories Grid */
+  .lead-grid {
+    display: grid;
+    grid-template-columns: 580px 1px 335px;
+    gap: 16px;
+    margin-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid #111;
+  }
+  .divider-v {
+    background-color: #ccc;
+    height: 100%;
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 6px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    border-radius: 2px;
+  }
+  .tag-trade { background-color: #8b0000; }
+  .tag-fed { background-color: #1f3a60; }
+  .tag-tech { background-color: #2d5a43; }
+  
+  h1.headline-main {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    color: #0d0d0d;
+  }
+  h2.subheadline-main {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .lead-body {
+    font-size: 12px;
+    line-height: 1.45;
+    text-align: justify;
+    color: #222;
+  }
+  .quote-box {
+    background: #f0ede6;
+    border-left: 3px solid #8b0000;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #2c251e;
+  }
+  
+  /* Right Side Lead */
+  .market-box {
+    background: #f3f1ea;
+    border: 1px solid #dcd7cd;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .market-box h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    color: #111;
+  }
+  .market-row {
+    font-family: monospace;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+    border-bottom: 1px dashed #ddd;
+  }
+  
+  /* Middle 3 Columns */
+  .middle-title {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 6px 0;
+    color: #333;
+  }
+  .continental-grid {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid #111;
+  }
+  .col-story h3 {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 4px 0 4px 0;
+    line-height: 1.25;
+  }
+  .col-story p {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #333;
+    text-align: justify;
+  }
+  
+  /* Science & Numbers Footer */
+  .tech-banner {
+    display: grid;
+    grid-template-columns: 630px 1px 290px;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1.5px solid #111;
+  }
+  .tech-banner h2 {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 0 4px 0;
+  }
+  
+  /* Numbers footer */
+  .numbers-banner {
+    background: #f1ede3;
+    border: 1px solid #d8d0c0;
+    padding: 10px 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 8px;
+  }
+  .num-val {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .num-lbl {
+    font-family: monospace;
+    font-size: 10px;
+    color: #444;
+    margin-top: 2px;
+  }
+  
+  .footer-colophon {
+    text-align: center;
+    font-family: monospace;
+    font-size: 9.5px;
+    color: #555;
+    margin-top: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="border-wrap">
+  <!-- Masthead -->
+  <div class="masthead">
+    <div class="title">The Global Dispatch</div>
+    <div class="subtitle">The Comprehensive International Record of Daily Events · Worldwide Edition</div>
+    <div class="meta-bar">
+      <span>VOL. CXXVI NO. 312</span>
+      <span>FRIDAY, NOVEMBER 13, 2026</span>
+      <span>DIPLOMATIC &amp; FINANCIAL JOURNAL</span>
+    </div>
+  </div>
+
+  <!-- Lead Stories -->
+  <div class="lead-grid">
+    <div>
+      <span class="tag tag-trade">International Trade</span>
+      <h1 class="headline-main">US-Canada Finalize Historic Bilateral Trade Corridor Agreement</h1>
+      <h2 class="subheadline-main">Envoys Mark Carney &amp; Scott Bessent Secure Manufacturing Exemptions Ahead of Global Summit</h2>
+      <p class="lead-body">
+        OTTAWA / WASHINGTON — Senior trade representatives concluded pivotal bilateral negotiations on Friday, reaching comprehensive terms on manufacturing exemptions, critical mineral transport corridors, and harmonized cross-border automotive standards. The accord defuses threatened tariff escalations across North America's commercial arteries and secures predictable capital deployment for global supply partners.
+      </p>
+      <div class="quote-box">
+        "Uncertainty directly inflates the cost of capital. Today's consensus establishes enduring rules of engagement for vital cross-border commerce."
+      </div>
+    </div>
+    
+    <div class="divider-v"></div>
+
+    <div>
+      <span class="tag tag-fed">Central Banking</span>
+      <h1 class="headline-main" font-size="17px">Federal Reserve Reviews Policy Pace</h1>
+      <p class="lead-body">
+        WASHINGTON — Regional Federal Reserve governors held deliberations regarding autumn rate trajectory and calibrated committee sessions, emphasizing disciplined progress toward core inflation targets.
+      </p>
+      <div class="market-box">
+        <h3>GLOBAL MARKET METRICS (NOV 13)</h3>
+        <div class="market-row"><span>10-Yr US Treasury</span><span>4.38% (-4 bps)</span></div>
+        <div class="market-row"><span>Brent Crude Oil</span><span>$74.20 / bbl</span></div>
+        <div class="market-row"><span>S&amp;P 500 Futures</span><span>+0.42%</span></div>
+        <div class="market-row"><span>Gold Spot</span><span>$2,684 / oz</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Continental Dispatches -->
+  <div>
+    <div class="middle-title">Global Dispatches Across Continents · Nov 13, 2026</div>
+    <div class="continental-grid">
+      <!-- Asia Pacific -->
+      <div class="col-story">
+        <span class="tag" style="background:#555;">Asia-Pacific</span>
+        <h3>Seoul Semiconductor Compact</h3>
+        <p>Tech ministries signed expanded semiconductor manufacturing compacts to guarantee resilient wafer allocations for industrial robotics.</p>
+        <h3 style="margin-top:8px;">Tokyo Currency Vigilance</h3>
+        <p>Finance authorities confirmed steady foreign exchange oversight amidst balanced regional trade settlements.</p>
+      </div>
+      
+      <div class="divider-v"></div>
+
+      <!-- Europe & Middle East -->
+      <div class="col-story">
+        <span class="tag" style="background:#555;">Europe &amp; M.E.</span>
+        <h3>Brussels Computing Directive</h3>
+        <p>European regulators ratified unified standards for verifiable distributed computing clusters and sovereign data privacy infrastructure.</p>
+        <h3 style="margin-top:8px;">Geneva UN Envoy Talks</h3>
+        <p>Diplomatic delegations advanced humanitarian transit protocols and international shipping safety guarantees.</p>
+      </div>
+
+      <div class="divider-v"></div>
+
+      <!-- Americas & Africa -->
+      <div class="col-story">
+        <span class="tag" style="background:#555;">Americas &amp; Africa</span>
+        <h3>Automotive Supply Continuity</h3>
+        <p>Major automakers confirmed multi-year factory production commitments following bilateral clarity on North American assembly rules.</p>
+        <h3 style="margin-top:8px;">AfCFTA Digital Trade Growth</h3>
+        <p>Pan-African trade corridors posted record settlement volumes through unified instant digital clearing systems.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Science & Tech Section -->
+  <div class="tech-banner">
+    <div>
+      <span class="tag tag-tech">Science &amp; AI Technology</span>
+      <h2>Verifiable Autonomous Agent Architectures Expand in Scientific Benchmarks</h2>
+      <p class="lead-body" style="font-size:11.5px;">
+        Leading computation institutes demonstrated distributed autonomous agent pipelines for aerodynamic simulations, biological protein folding, and automated proof auditing. International benchmarks confirmed zero-friction reproducibility.
+      </p>
+    </div>
+    
+    <div class="divider-v"></div>
+
+    <div style="background:#f4f7f5; padding:8px; border:1px solid #cfe0d4;">
+      <div style="font-family:'Helvetica Neue', sans-serif; font-size:10px; font-weight:bold; color:#2d5a43; margin-bottom:4px;">RENEWABLE INFRASTRUCTURE</div>
+      <p style="font-size:11px; line-height:1.35; color:#333;">
+        North Sea offshore wind grids completed interconnection of an additional 4.2 GW capacity, establishing an all-time autumn peak.
+      </p>
+    </div>
+  </div>
+
+  <!-- Bottom Numbers & Colophon -->
+  <div>
+    <div class="numbers-banner">
+      <div>
+        <div class="num-val" style="color:#1f3a60;">194</div>
+        <div class="num-lbl">Nations in Global Trade</div>
+      </div>
+      <div>
+        <div class="num-val" style="color:#8b0000;">$1.4T</div>
+        <div class="num-lbl">Daily Cross-Border Freight</div>
+      </div>
+      <div>
+        <div class="num-val" style="color:#2d5a43;">24.8%</div>
+        <div class="num-lbl">Global Renewable Generation</div>
+      </div>
+      <div>
+        <div class="num-val" style="color:#333;">0.00%</div>
+        <div class="num-lbl">Net Tariff Escalation Today</div>
+      </div>
+    </div>
+
+    <div class="footer-colophon">
+      THE GLOBAL DISPATCH · VERIFIED WORLDWIDE JOURNALISM · FRIDAY 13 NOVEMBER 2026 EDITION · PUBLISHED AUTONOMOUSLY BY @QUIET-OTTER-24
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

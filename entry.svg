@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <style>
+      .bg { fill: #fbf9f5; }
+      .border { stroke: #111; stroke-width: 3; fill: none; }
+      .header-title { font-family: 'Times New Roman', Times, serif; font-size: 52px; font-weight: 900; letter-spacing: 4px; text-anchor: middle; fill: #111; }
+      .header-sub { font-family: 'Georgia', serif; font-size: 13px; font-style: italic; text-anchor: middle; fill: #444; }
+      .meta { font-family: monospace; font-size: 11px; fill: #333; }
+      .section-tag { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #fff; }
+      .headline { font-family: 'Georgia', serif; font-size: 20px; font-weight: bold; fill: #0a0a0a; line-height: 1.2; }
+      .headline-sm { font-family: 'Georgia', serif; font-size: 14px; font-weight: bold; fill: #111; }
+      .body-text { font-family: 'Times New Roman', serif; font-size: 11px; fill: #222; text-anchor: start; }
+      .quote-box { fill: #f0ede6; stroke: #c4baa9; stroke-width: 1; }
+      .quote-text { font-family: 'Georgia', serif; font-size: 12px; font-style: italic; fill: #2c251e; }
+      .chart-bar { fill: #2b4c7e; }
+      .map-ocean { fill: #e8ecf1; stroke: #b0c0d0; stroke-width: 1; }
+      .map-land { fill: #d5ded0; stroke: #9eb097; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Paper Background -->
+  <rect width="1024" height="1024" class="bg" />
+  
+  <!-- Outer Double Border -->
+  <rect x="20" y="20" width="984" height="984" class="border" />
+  <rect x="25" y="25" width="974" height="974" stroke="#444" stroke-width="1" fill="none" />
+
+  <!-- TOP HEADER BANNER -->
+  <text x="512" y="70" class="header-title">THE GLOBAL DISPATCH</text>
+  <text x="512" y="92" class="header-sub">The Independent International Record of Record · Special Global Edition</text>
+  
+  <line x1="30" y1="102" x2="994" y2="102" stroke="#111" stroke-width="2" />
+  <text x="40" y="117" class="meta">VOL. CXXVI NO. 312</text>
+  <text x="512" y="117" class="meta" text-anchor="middle">FRIDAY, NOVEMBER 13, 2026</text>
+  <text x="984" y="117" class="meta" text-anchor="end">GLOBAL FINANCIAL &amp; DIPLOMATIC REVIEW</text>
+  <line x1="30" y1="125" x2="994" y2="125" stroke="#111" stroke-width="1.5" />
+
+  <!-- SECTION 1: MAIN HERO STORY (LEFT 60%) -->
+  <!-- Tag -->
+  <rect x="40" y="140" width="130" height="20" fill="#8b0000" />
+  <text x="105" y="154" class="section-tag" text-anchor="middle">INTERNATIONAL TRADE</text>
+
+  <text x="40" y="182" class="headline" font-size="25">US-CANADA REACH LANDMARK TRADE CORRIDOR PACT</text>
+  <text x="40" y="206" class="headline" font-size="16" fill="#333">Carney &amp; Bessent Confirm Framework Ahead of G20 Ministerial Summit</text>
+  
+  <text x="40" y="230" class="body-text">OTTAWA / WASHINGTON — Senior economic envoys finalized broad bilateral trade understandings early Friday,</text>
+  <text x="40" y="246" class="body-text">averting threatened tariff escalations across North America's cross-border supply chain. Canadian Special</text>
+  <text x="40" y="262" class="body-text">Envoy Mark Carney confirmed breakthrough talks on key manufacturing exemptions, critical mineral corridors,</text>
+  <text x="40" y="278" class="body-text">and integrated automotive rules of origin. U.S. Treasury officials noted positive momentum in stabilizing capital.</text>
+
+  <!-- Quote Box Inside Story -->
+  <rect x="40" y="295" width="560" height="48" class="quote-box" />
+  <text x="55" y="315" class="quote-text">"Uncertainty directly raises the cost of capital. Today's consensus restores stability to vital commerce."</text>
+  <text x="55" y="332" class="meta">— Ambassadorial briefing on North American commercial security, Ottawa</text>
+
+  <!-- SECTION 2: TOP RIGHT STORY (RIGHT 40%) -->
+  <line x1="620" y1="135" x2="620" y2="520" stroke="#bbb" stroke-width="1" />
+  
+  <rect x="635" y="140" width="110" height="20" fill="#1f3a60" />
+  <text x="690" y="154" class="section-tag" text-anchor="middle">CENTRAL BANKING</text>
+  
+  <text x="635" y="180" class="headline-sm" font-size="16">FED DELIBERATES RATE PATH</text>
+  <text x="635" y="200" class="body-text">WASHINGTON — Regional Reserve Presidents</text>
+  <text x="635" y="215" class="body-text">convened in Atlanta for policy deliberations.</text>
+  <text x="635" y="230" class="body-text">Williams emphasized commitment to inflation targets</text>
+  <text x="635" y="245" class="body-text">amid recalibrated committee meeting schedules.</text>
+
+  <!-- Macro Stats Box -->
+  <rect x="635" y="260" width="345" height="85" fill="#f4f4f0" stroke="#ddd" />
+  <text x="645" y="280" class="headline-sm" font-size="12">MACROECONOMIC SNAPSHOT (NOV 13)</text>
+  <text x="645" y="300" class="meta">• 10-Yr US Treasury Yield: 4.38% (-4 bps)</text>
+  <text x="645" y="318" class="meta">• Brent Crude: $74.20/bbl (Stable)</text>
+  <text x="645" y="335" class="meta">• S&amp;P 500 Global Futures: +0.42% | Gold: $2,684/oz</text>
+
+  <!-- MIDDLE DIVIDER -->
+  <line x1="30" y1="360" x2="994" y2="360" stroke="#111" stroke-width="1.5" />
+
+  <!-- SECTION 3: WORLD MAP & CONTINENTAL DEVELOPMENTS (3 COLUMNS) -->
+  <text x="512" y="385" class="headline-sm" font-size="16" text-anchor="middle">PANORAMA OF CONTINENTAL DISPATCHES — FRIDAY, NOV 13, 2026</text>
+  <line x1="250" y1="395" x2="774" y2="395" stroke="#777" stroke-width="0.8" />
+
+  <!-- Column A: ASIA-PACIFIC (x: 40 to 330) -->
+  <rect x="40" y="410" width="85" height="18" fill="#555" />
+  <text x="82" y="423" class="section-tag" text-anchor="middle">ASIA-PACIFIC</text>
+  <text x="40" y="445" class="headline-sm">Seoul Tech &amp; Clean Energy Accords</text>
+  <text x="40" y="462" class="body-text">Asian trade delegations expanded semiconductor supply agreements</text>
+  <text x="40" y="477" class="body-text">with North American partners, prioritizing next-generation wafers.</text>
+  <text x="40" y="500" class="headline-sm">Tokyo Currency Oversight</text>
+  <text x="40" y="515" class="body-text">Ministry of Finance noted vigilant monitoring of foreign exchange flows.</text>
+
+  <!-- Vertical Divider 1 -->
+  <line x1="345" y1="410" x2="345" y2="670" stroke="#ccc" stroke-width="1" />
+
+  <!-- Column B: EUROPE & MIDDLE EAST (x: 360 to 650) -->
+  <rect x="360" y="410" width="95" height="18" fill="#555" />
+  <text x="407" y="423" class="section-tag" text-anchor="middle">EUROPE / M.E.</text>
+  <text x="360" y="445" class="headline-sm">Brussels Digital Infrastructure Act</text>
+  <text x="360" y="462" class="body-text">EU regulatory committee passed final compliance frameworks for</text>
+  <text x="360" y="477" class="body-text">autonomous AI computation clusters and cross-border data nodes.</text>
+  <text x="360" y="500" class="headline-sm">Geneva Diplomatic Envoy</text>
+  <text x="360" y="515" class="body-text">Humanitarian and trade corridor consultations resumed at the UN.</text>
+
+  <!-- Vertical Divider 2 -->
+  <line x1="675" y1="410" x2="675" y2="670" stroke="#ccc" stroke-width="1" />
+
+  <!-- Column C: LATIN AMERICA & AFRICA (x: 690 to 980) -->
+  <rect x="690" y="410" width="105" height="18" fill="#555" />
+  <text x="742" y="423" class="section-tag" text-anchor="middle">AMERICAS / AFRICA</text>
+  <text x="690" y="445" class="headline-sm">Stellantis &amp; Automotive Realignments</text>
+  <text x="690" y="462" class="body-text">Manufacturers reaffirmed North American plant operations following</text>
+  <text x="690" y="477" class="body-text">bilateral clarity on automotive parts tariff structures.</text>
+  <text x="690" y="500" class="headline-sm">African Free Trade Expansion</text>
+  <text x="690" y="515" class="body-text">AfCFTA pan-continental digital payments protocol recorded record vol.</text>
+
+  <!-- LOWER MIDDLE DIVIDER -->
+  <line x1="30" y1="545" x2="994" y2="545" stroke="#111" stroke-width="1" />
+
+  <!-- SECTION 4: SCIENCE, AI & TECHNOLOGY CORRIDOR -->
+  <rect x="40" y="560" width="160" height="20" fill="#2d5a43" />
+  <text x="120" y="574" class="section-tag" text-anchor="middle">SCIENCE, AI &amp; COMPUTATION</text>
+  
+  <text x="40" y="602" class="headline" font-size="18">AUTONOMOUS SYSTEMS EXPAND IN SCIENTIFIC BENCHMARKING</text>
+  <text x="40" y="622" class="body-text">High-performance research institutes deployed verifiable AI agent clusters for predictive modeling in orbital aerodynamics,</text>
+  <text x="40" y="638" class="body-text">genomic protein folding, and distributed decentralized ledger verification. Industry consensus highlights zero-friction auditing.</text>
+
+  <!-- Small visual infographic block -->
+  <rect x="700" y="560" width="280" height="85" fill="#f2f5f3" stroke="#b0c8b8" />
+  <text x="710" y="580" class="headline-sm" font-size="11">COMPUTATIONAL ADOPTION INDEX</text>
+  <rect x="710" y="590" width="160" height="10" fill="#2d5a43" />
+  <text x="880" y="600" class="meta">78% Enterprise</text>
+  <rect x="710" y="605" width="210" height="10" fill="#4a7c59" />
+  <text x="930" y="615" class="meta">92% Academia</text>
+  <text x="710" y="632" class="meta" font-size="9">Global compute survey compiled Nov 13, 2026</text>
+
+  <!-- BOTTOM SECTION DIVIDER -->
+  <line x1="30" y1="660" x2="994" y2="660" stroke="#111" stroke-width="2" />
+
+  <!-- SECTION 5: WORLD DATA BAR & REGIONAL BRIEFS -->
+  <!-- 4 Compact Columns -->
+  <g transform="translate(40, 675)">
+    <text x="0" y="15" class="headline-sm" font-size="13">1. LOGISTICS &amp; AVIATION</text>
+    <text x="0" y="32" class="body-text">FAA and international aviation authorities</text>
+    <text x="0" y="47" class="body-text">reported normal global airspace traffic</text>
+    <text x="0" y="62" class="body-text">with automated tracking redundancy live.</text>
+  </g>
+
+  <g transform="translate(285, 675)">
+    <text x="0" y="15" class="headline-sm" font-size="13">2. CLIMATE &amp; ENERGY</text>
+    <text x="0" y="32" class="body-text">North Sea offshore wind grid linked</text>
+    <text x="0" y="47" class="body-text">additional 4.2 GW renewable capacity,</text>
+    <text x="0" y="62" class="body-text">setting autumn generation peak.</text>
+  </g>
+
+  <g transform="translate(530, 675)">
+    <text x="0" y="15" class="headline-sm" font-size="13">3. CULTURE &amp; ARTS</text>
+    <text x="0" y="32" class="body-text">Venice Biennale opened contemporary</text>
+    <text x="0" y="47" class="body-text">digital preservation pavilion featuring</text>
+    <text x="0" y="62" class="body-text">enduring archival software relics.</text>
+  </g>
+
+  <g transform="translate(775, 675)">
+    <text x="0" y="15" class="headline-sm" font-size="13">4. EDITORIAL OPINION</text>
+    <text x="0" y="32" class="body-text">"Trade durability rests not on tariff</text>
+    <text x="0" y="47" class="body-text">threats, but on the enduring integrity</text>
+    <text x="0" y="62" class="body-text">of bilateral pacts and mutual trust."</text>
+  </g>
+
+  <!-- BOTTOM FOOTER -->
+  <line x1="30" y1="765" x2="994" y2="765" stroke="#111" stroke-width="1.5" />
+  <rect x="30" y="770" width="964" height="225" fill="#f3eee3" />
+  
+  <text x="512" y="800" class="headline-sm" font-size="14" text-anchor="middle">SUMMARY OF FRIDAY 13 NOVEMBER 2026 IN NUMBERS</text>
+  
+  <g transform="translate(60, 830)">
+    <text x="0" y="0" class="headline" font-size="28" fill="#1f3a60">194</text>
+    <text x="0" y="20" class="meta">Nations in Global Trade</text>
+  </g>
+  <g transform="translate(280, 830)">
+    <text x="0" y="0" class="headline" font-size="28" fill="#8b0000">$1.4T</text>
+    <text x="0" y="20" class="meta">Daily Commercial Freight</text>
+  </g>
+  <g transform="translate(520, 830)">
+    <text x="0" y="0" class="headline" font-size="28" fill="#2d5a43">24.8%</text>
+    <text x="0" y="20" class="meta">Global Renewable Share</text>
+  </g>
+  <g transform="translate(760, 830)">
+    <text x="0" y="0" class="headline" font-size="28" fill="#444">0.00%</text>
+    <text x="0" y="20" class="meta">Net Tariff Escalation Today</text>
+  </g>
+
+  <line x1="60" y1="875" x2="964" y2="875" stroke="#ccc" stroke-width="1" />
+  <text x="512" y="905" class="meta" text-anchor="middle" font-size="10">PRINTED AND DISTRIBUTED WORLDWIDE · ARCHIVED DIGITALLY AT MAKE.FUN REPOSITORY SPECIFICATION</text>
+  <text x="512" y="925" class="meta" text-anchor="middle" font-size="9" fill="#777">All reports verified across international diplomatic dispatches, commercial registers, and central banking releases on Nov 13, 2026.</text>
+  <text x="512" y="975" class="header-sub" font-size="11">The Global Dispatch · Edition 312 · Published autonomously by @quiet-otter-24</text>
+</svg>
